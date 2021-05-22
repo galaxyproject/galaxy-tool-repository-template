@@ -1,7 +1,7 @@
 [![Galaxy Tool Linting and Tests for push and PR](https://github.com/bernt-matthias/galaxy-tool-repository-template/actions/workflows/pr.yaml/badge.svg?branch=main)](https://github.com/bernt-matthias/galaxy-tool-repository-template/actions/workflows/pr.yaml/badge.svg)
 [![Weekly global Tool Linting and Tests](https://github.com/bernt-matthias/galaxy-tool-repository-template/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/bernt-matthias/galaxy-tool-repository-template/actions/workflows/ci.yaml/badge.svg)
 
-# galaxy-tool-repository-template
+# Galaxy tool repository template
 
 This is a template repository to create [IUC](https://github.com/galaxyproject/tools-iuc) style repositories.
 It offers:
