@@ -301,7 +301,7 @@ jobs:
   deploy:
     name: Deploy
     needs: [setup, lint, flake8, lintr, combine_outputs]
-    if: ${{ github.ref == 'refs/heads/master' && github.repository_owner == 'TODO_REPOSITORY_OWNER' }}
+    if: ${{ github.ref == 'refs/heads/master' && github.repository_owner == 'bernt-matthias' }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
