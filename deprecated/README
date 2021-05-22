@@ -1,0 +1,1 @@
+Move deprected content (tools, tool-collections and datamanagers) to this directory. The content of this directory is ignored by the CI workflows.

@@ -1,0 +1,1 @@
+# add paths to tool repositories that should be tested with conda requirement resolver instead of docker containers
