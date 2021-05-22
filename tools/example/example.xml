@@ -1,0 +1,55 @@
+<tool id="example" name="example" version="@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" profile="20.01" license="MIT">
+    <description>serving as an example</description>
+    <xrefs>
+        <xref type="bio.tools"></xref>
+    </xrefs>
+    <macros>
+        <token name="@TOOL_VERSION@">0.1.0</token>
+        <token name="@VERSION_SUFFIX@">0</token>
+    </macros>
+    <edam_topics>
+        <edam_topic>topic_TODO</edam_topic>
+    </edam_topics>
+    <edam_operations>
+        <edam_operation>operation_TODO</edam_operation>
+    </edam_operations>
+    <requirements>
+        <requirement type="package" version="5.0.018">bash</requirementexample>
+    </requirements>
+    <command detect_errors="exit_code"><![CDATA[
+        echo '$in' > '$out'
+    ]]></command>
+    <inputs>
+        <param name="in" type="text" value="" label="A text onput parameter" help="Could need some help">
+            <sanitizer invalid_char="">
+                <valid initial="string.letters,string.digits">
+                    <add value="_" />
+                </valid>
+            </sanitizer>
+        </param>
+    </inputs>
+    <outputs>
+        <data format="txt" name="out" />
+    </outputs>
+    <tests>
+        <test>
+            <param name="in" value="test">
+            <output name="out">
+                <assert_contents>
+                    <has_text text="test"/>
+                </assert_contents>
+            </output>
+        </test>
+    </tests>
+    <help><![CDATA[
+
+.. class:: infomark
+
+**What it does**
+
+Serves as an example
+    ]]></help>
+    <citations>
+        <citation type="doi">10.1093/nar/gky379</citation>
+    </citations>
+</tool>
