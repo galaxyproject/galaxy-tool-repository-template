@@ -1,5 +1,5 @@
-[![Galaxy Tool Linting and Tests for push and PR](https://github.com/bernt-matthias/galaxy-tool-repository-template/actions/workflows/pr.yaml/badge.svg?branch=main)](https://github.com/bernt-matthias/galaxy-tool-repository-template/actions/workflows/pr.yaml/badge.svg)
-[![Weekly global Tool Linting and Tests](https://github.com/bernt-matthias/galaxy-tool-repository-template/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/bernt-matthias/galaxy-tool-repository-template/actions/workflows/ci.yaml/badge.svg)
+[![Galaxy Tool Linting and Tests for push and PR](https://github.com/galaxyproject/galaxy-tool-repository-template/actions/workflows/pr.yaml/badge.svg?branch=main)](https://github.com/galaxyproject/galaxy-tool-repository-template/actions/workflows/pr.yaml/badge.svg)
+[![Weekly global Tool Linting and Tests](https://github.com/galaxyproject/galaxy-tool-repository-template/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/galaxyproject/galaxy-tool-repository-template/actions/workflows/ci.yaml/badge.svg)
 
 # Galaxy tool repository template
 
@@ -14,8 +14,8 @@ Some documentation of the structure and the use of the CI can be found in [here]
 Setup
 =====
 
-- Adapt the repository owner from `bernt-matthias` to the owner of your repository [here](https://github.com/bernt-matthias/galaxy-tool-repository-template/blob/e871ac150d8273b51b46a379f15dfbf4b1af0ddd/.github/workflows/ci.yaml#L15), [here](https://github.com/bernt-matthias/galaxy-tool-repository-template/blob/e871ac150d8273b51b46a379f15dfbf4b1af0ddd/.github/workflows/pr.yaml#L304) and [here](https://github.com/bernt-matthias/galaxy-tool-repository-template/blob/e871ac150d8273b51b46a379f15dfbf4b1af0ddd/.github/workflows/slash.yaml#L10). This is needed to forbid running the CI workflows in forks.
-- Change the links for the badges in this document [here](https://github.com/bernt-matthias/galaxy-tool-repository-template/blob/e871ac150d8273b51b46a379f15dfbf4b1af0ddd/README.md#L1) and [here](https://github.com/bernt-matthias/galaxy-tool-repository-template/blob/e871ac150d8273b51b46a379f15dfbf4b1af0ddd/README.md#L2), i.e. chage the organisation and repository name in the links. Certainly you may want to add the other content of this document.
+- Adapt the repository owner from `galaxyproject` to the owner of your repository [here](https://github.com/galaxyproject/galaxy-tool-repository-template/blob/main/.github/workflows/ci.yaml#L15), [here](https://github.com/galaxyproject/galaxy-tool-repository-template/blob/main/.github/workflows/pr.yaml#L304) and [here](https://github.com/galaxyproject/galaxy-tool-repository-template/blob/main/.github/workflows/slash.yaml#L10). This is needed to forbid running the CI workflows in forks.
+- Change the links for the badges in this document [here](https://github.com/galaxyproject/galaxy-tool-repository-template/blob/main/README.md#L1) and [here](https://github.com/galaxyproject/galaxy-tool-repository-template/blob/main/README.md#L2), i.e. chage the organisation and repository name in the links. Certainly you may want to add the other content of this document.
 - Add the API keys to the toolshed and testtoolshed as secrets with the name `TTS_API_KEY` and `TS_API_KEY`. 
 - Remove the example tool in `tools/example`
 
