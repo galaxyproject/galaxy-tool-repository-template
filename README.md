@@ -29,6 +29,8 @@ Also consider adding:
 - `.github/CODEOWNERS`
 - `.github/PULL_REQUEST_TEMPLATE.md`
 
+By default tool linting will fail also for warning. You can change this by modifying the value of ``error_level`` in the lint job [here](https://github.com/galaxyproject/galaxy-tool-repository-template/blob/main/.github/workflows/pr.yaml)
+
 Updates
 =======
 
