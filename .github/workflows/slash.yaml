@@ -7,9 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Slash Command Dispatch
-        if: github.repository_owner == 'galaxyproject'
-        uses: peter-evans/slash-command-dispatch@v2
+        # TODO if: github.repository_owner == 'galaxyproject'
+        uses: peter-evans/slash-command-dispatch@v3
         with:
           token: ${{ secrets.PAT }}
           commands: |
             run-all-tool-tests
+            run-autoupdate
