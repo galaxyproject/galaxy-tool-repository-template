@@ -8,7 +8,8 @@ It offers:
 
 - the same structure as the IUC repository
 - CI for pull requests and weekly CI for all tools
-
+- automatic Tool Shed deployment of any updated tools, if the CI passes
+ 
 Some documentation of the structure and the use of the CI can be found in [here](TODO link to tutorial).
 
 Setup
@@ -16,7 +17,7 @@ Setup
 
 - Adapt the repository owner from `galaxyproject` to the owner of your repository [here](https://github.com/galaxyproject/galaxy-tool-repository-template/blob/main/.github/workflows/ci.yaml#L15), [here](https://github.com/galaxyproject/galaxy-tool-repository-template/blob/main/.github/workflows/pr.yaml#L304) and [here](https://github.com/galaxyproject/galaxy-tool-repository-template/blob/main/.github/workflows/slash.yaml#L10). This is needed to forbid running the CI workflows in forks.
 - Change the links for the badges in this document [here](https://github.com/galaxyproject/galaxy-tool-repository-template/blob/main/README.md#L1) and [here](https://github.com/galaxyproject/galaxy-tool-repository-template/blob/main/README.md#L2), i.e. chage the organisation and repository name in the links. Certainly you may want to add the other content of this document.
-- Add the API keys to the toolshed and testtoolshed as secrets with the name `TTS_API_KEY` and `TS_API_KEY`. 
+- Add the API keys to the toolshed and testtoolshed as secrets with the name `TTS_API_KEY` and `TS_API_KEY` (for automated deployment). 
 - Remove the example tool in `tools/example`
 
 
