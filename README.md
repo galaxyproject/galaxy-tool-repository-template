@@ -22,7 +22,7 @@ Setup
 
 
 In order to use the `/run-all-tool-tests` slash command you need to add a secret `PAT` to your repo that allows the action to access
-you repository - see [here](https://docs.github.com/en/actions/reference/encrypted-secrets). The slash command allows to run trigger weekly CI running using a given fork and branch of the Galaxy project, e.g. `/run-all-tool-tests branch=release_21.05 fork=galaxyproject`.
+you repository - see [here](https://docs.github.com/en/actions/reference/encrypted-secrets). The slash command allows to run trigger weekly CI running using a given fork and branch of the Galaxy project, e.g. `/run-all-tool-tests branch=release_24.0 fork=galaxyproject`.
 
 Also consider adding:
 
