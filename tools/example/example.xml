@@ -4,15 +4,15 @@
         <token name="@TOOL_VERSION@">0.1.0</token>
         <token name="@VERSION_SUFFIX@">0</token>
     </macros>
-    <xrefs>
-        <xref type="bio.tools"></xref>
-    </xrefs>
     <edam_topics>
         <edam_topic>topic_1234</edam_topic>
     </edam_topics>
     <edam_operations>
         <edam_operation>operation_1234</edam_operation>
     </edam_operations>
+    <xrefs>
+        <xref type="bio.tools"></xref>
+    </xrefs>
     <requirements>
         <requirement type="package" version="5.0.018">bash</requirement>
     </requirements>
