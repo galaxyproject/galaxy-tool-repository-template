@@ -33,7 +33,7 @@
     </outputs>
     <tests>
         <test>
-            <param name="in" value="test">
+            <param name="in" value="test"/>
             <output name="out">
                 <assert_contents>
                     <has_text text="test"/>
