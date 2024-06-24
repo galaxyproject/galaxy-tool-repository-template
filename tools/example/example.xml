@@ -1,12 +1,12 @@
 <tool id="example" name="example" version="@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" profile="20.01" license="MIT">
     <description>serving as an example</description>
-    <xrefs>
-        <xref type="bio.tools"></xref>
-    </xrefs>
     <macros>
         <token name="@TOOL_VERSION@">0.1.0</token>
         <token name="@VERSION_SUFFIX@">0</token>
     </macros>
+    <xrefs>
+        <xref type="bio.tools"></xref>
+    </xrefs>
     <edam_topics>
         <edam_topic>topic_1234</edam_topic>
     </edam_topics>
