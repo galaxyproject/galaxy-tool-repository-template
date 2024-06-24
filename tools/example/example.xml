@@ -14,7 +14,7 @@
         <edam_operation>operation_TODO</edam_operation>
     </edam_operations>
     <requirements>
-        <requirement type="package" version="5.0.018">bash</requirementexample>
+        <requirement type="package" version="5.0.018">bash</requirement>
     </requirements>
     <command detect_errors="exit_code"><![CDATA[
         echo '$in' > '$out'
