@@ -8,10 +8,10 @@
         <token name="@VERSION_SUFFIX@">0</token>
     </macros>
     <edam_topics>
-        <edam_topic>topic_TODO</edam_topic>
+        <edam_topic>topic_1234</edam_topic>
     </edam_topics>
     <edam_operations>
-        <edam_operation>operation_TODO</edam_operation>
+        <edam_operation>operation_1234</edam_operation>
     </edam_operations>
     <requirements>
         <requirement type="package" version="5.0.018">bash</requirement>
