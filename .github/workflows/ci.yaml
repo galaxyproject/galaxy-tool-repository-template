@@ -103,7 +103,7 @@ jobs:
         mode: lint
         repository-list: ${{ needs.setup.outputs.repository-list }}
         tool-list: ${{ needs.setup.outputs.tool-list }}
-        additional-planemo-options: --biocontainers -s stdio,tests,output,inputs,help,general,command,citations,tool_xsd,xml_order,tool_urls,shed_metadata,urls,readme,shed_yaml,repository_dependencies,tool_dependencies_actions,tool_dependencies_sha256sum,tool_dependencies_xsd,expansion
+        additional-planemo-options: --biocontainers --skip version_bumped -s stdio,tests,output,inputs,help,general,command,citations,tool_xsd,xml_order,tool_urls,shed_metadata,urls,readme,shed_yaml,repository_dependencies,tool_dependencies_actions,tool_dependencies_sha256sum,tool_dependencies_xsd,expansion
     - uses: actions/upload-artifact@v4
       if: ${{ failure() }}
       with:

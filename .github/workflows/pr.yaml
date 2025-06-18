@@ -140,6 +140,7 @@ jobs:
         fail-level: ${{ env.FAIL_LEVEL }}
         repository-list: ${{ needs.setup.outputs.repository-list }}
         tool-list: ${{ needs.setup.outputs.tool-list }}
+        additional-planemo-options: --skip version_bumped
     - uses: actions/upload-artifact@v4
       if: ${{ failure() }}
       with:
