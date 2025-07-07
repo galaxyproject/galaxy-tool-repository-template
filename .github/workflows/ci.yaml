@@ -7,7 +7,7 @@ on:
     types: [run-all-tool-tests-command]
 env:
   GALAXY_FORK: galaxyproject
-  GALAXY_BRANCH: release_24.1
+  GALAXY_BRANCH: release_25.0
   MAX_CHUNKS: 40
 jobs:
   setup:
@@ -75,7 +75,7 @@ jobs:
         echo 'Using ${{ steps.discover.outputs.chunk-count }} chunks (${{ steps.discover.outputs.chunk-list }})'
 
   lint:
-    name: Check for missing containers
+    name: Lint tool-list
     needs: setup
     if: ${{ needs.setup.outputs.repository-list != '' || needs.setup.outputs.tool-list != '' }}
     runs-on: ubuntu-latest
@@ -101,6 +101,7 @@ jobs:
       id: lint
       with:
         mode: lint
+        fail-level: warn
         repository-list: ${{ needs.setup.outputs.repository-list }}
         tool-list: ${{ needs.setup.outputs.tool-list }}
         additional-planemo-options: --biocontainers --skip version_bumped
@@ -200,6 +201,7 @@ jobs:
       with:
         mode: combine
         html-report: true
+        markdown-report: true
     - uses: actions/upload-artifact@v4
       with:
         name: 'All tool test results'
